@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upitnik o računarima</title>
+</head>
+<body>
+    <h1>Upitnik o računarima</h1>
+    <form action="/submit" method="post">
+        <!-- Pitanje 1 -->
+        <label for="q1">1. Koliko često koristite računar?</label><br>
+        <input type="radio" id="q1_daily" name="q1" value="daily">
+        <label for="q1_daily">Svakodnevno</label><br>
+        <input type="radio" id="q1_weekly" name="q1" value="weekly">
+        <label for="q1_weekly">Nekoliko puta nedeljno</label><br>
+        <input type="radio" id="q1_monthly" name="q1" value="monthly">
+        <label for="q1_monthly">Nekoliko puta mesečno</label><br>
+        <input type="radio" id="q1_rarely" name="q1" value="rarely">
+        <label for="q1_rarely">Retko</label><br><br>
+
+        <!-- Pitanje 2 -->
+        <label for="q2">2. Koji operativni sistem koristite?</label><br>
+        <input type="checkbox" id="q2_windows" name="q2" value="windows">
+        <label for="q2_windows">Windows</label><br>
+        <input type="checkbox" id="q2_mac" name="q2" value="mac">
+        <label for="q2_mac">MacOS</label><br>
+        <input type="checkbox" id="q2_linux" name="q2" value="linux">
+        <label for="q2_linux">Linux</label><br>
+        <input type="checkbox" id="q2_other" name="q2" value="other">
+        <label for="q2_other">Drugo</label><br><br>
+
+        <!-- Pitanje 3 -->
+        <label for="q3">3. Koju svrhu najčešće koristite računar?</label><br>
+        <select id="q3" name="q3">
+            <option value="work">Posao</option>
+            <option value="education">Obrazovanje</option>
+            <option value="gaming">Igranje igara</option>
+            <option value="browsing">Pretraživanje interneta</option>
+            <option value="other">Drugo</option>
+        </select><br><br>
+
+        <!-- Pitanje 4 -->
+        <label for="q4">4. Koliko godina imate?</label><br>
+        <input type="number" id="q4" name="q4" min="1" max="100"><br><br>
+
+        <!-- Pitanje 5 -->
+        <label for="q5">5. Dodatni komentari ili sugestije:</label><br>
+        <textarea id="q5" name="q5" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Dugme za slanje -->
+        <input type="submit" value="Pošalji">
+    </form>
+</body>
+</html>
